@@ -1,0 +1,826 @@
+<?xml version="1.0"?>
+<!DOCTYPE shipmod SYSTEM "shipmod.dtd">
+
+<shipmod name="demo" shipmodversion="1">
+	<description>This is a demonstration ship mod. This mod is very short and crappy. Ship 1.0 will come standard with a far better mod. For now, this will have to do (Or you could make your own mod. Its pretty simple. Just open demo.xml and try changing the values)  --Mod By Tom Wadley with pics from Liam Fitzpatrick and Harley Wilmott--</description>
+	<picMaskColour>0</picMaskColour>
+	<newGame>
+		<weaponsOwnedNames>
+			<weaponName>plasma player</weaponName>
+		</weaponsOwnedNames>
+		<shipsOwnedNames>
+			<shipName>blue player</shipName>
+		</shipsOwnedNames>
+	</newGame>
+	<healthPrice>
+		<qty>20</qty>
+		<cost>400</cost>
+	</healthPrice>
+
+	<!--These are the values for entryPoint and enetrySide for enemies
+		entryPoint:
+		epTop = 0
+		epBottom = 1
+		epLeft = 2
+		epRight = 3
+
+		entrySide:
+		epLeftSide = 0
+		epRightSide = 1
+		epMiddleSide = 2
+		epAnywhereSide = 3
+	-->
+	<enemies>
+		<enemy>
+			<obName>grey enemy</obName>
+			<minMoveTop>1500</minMoveTop>
+			<maxMoveTop>2000</maxMoveTop>
+			<minMoveLeft>0</minMoveLeft>
+			<maxMoveLeft>0</maxMoveLeft>
+			<maxHealth>10</maxHealth>
+			<weaponName>missile enemy</weaponName>
+			<pics>
+				<pic>grey enemy-1.bmp</pic>
+				<pic>grey enemy-2.bmp</pic>
+			</pics>
+			<timeBetweenPics>0.1</timeBetweenPics>
+			<picsDead>
+				<pic>explosion-1.bmp</pic>
+				<pic>explosion-2.bmp</pic>
+			</picsDead>
+			<timeBetweenPicsDead>0.3</timeBetweenPicsDead>
+			<cash>100</cash>
+			<initReloadTime>1</initReloadTime>
+			<entryPoint>0</entryPoint>
+			<entrySide>3</entrySide>
+			<entrySideChange>0</entrySideChange>
+		</enemy>
+		<enemy>
+			<obName>rust enemy</obName>
+			<minMoveTop>2000</minMoveTop>
+			<maxMoveTop>2500</maxMoveTop>
+			<minMoveLeft>0</minMoveLeft>
+			<maxMoveLeft>0</maxMoveLeft>
+			<maxHealth>8</maxHealth>
+			<weaponName>dual fireball enemy</weaponName>
+			<pics>
+				<pic>rust enemy-1.bmp</pic>
+				<pic>rust enemy-2.bmp</pic>
+				<pic>rust enemy-3.bmp</pic>
+				<pic>rust enemy-4.bmp</pic>
+				<pic>rust enemy-5.bmp</pic>
+				<pic>rust enemy-6.bmp</pic>
+			</pics>
+			<timeBetweenPics>0.1</timeBetweenPics>
+			<picsDead>
+				<pic>explosion-1.bmp</pic>
+				<pic>explosion-2.bmp</pic>
+			</picsDead>
+			<timeBetweenPicsDead>0.3</timeBetweenPicsDead>
+			<cash>150</cash>
+			<initReloadTime>1</initReloadTime>
+			<entryPoint>0</entryPoint>
+			<entrySide>3</entrySide>
+			<entrySideChange>0</entrySideChange>
+		</enemy>
+		<enemy>
+			<obName>green enemy</obName>
+			<minMoveTop>1150</minMoveTop>
+			<maxMoveTop>1350</maxMoveTop>
+			<minMoveLeft>0</minMoveLeft>
+			<maxMoveLeft>0</maxMoveLeft>
+			<maxHealth>28</maxHealth>
+			<weaponName>gunk enemy</weaponName>
+			<pics>
+				<pic>green ship-1.bmp</pic>
+				<pic>green ship-2.bmp</pic>
+				<pic>green ship-3.bmp</pic>
+			</pics>
+			<timeBetweenPics>0.1</timeBetweenPics>
+			<picsDead>
+				<pic>green ship dead-1.bmp</pic>
+				<pic>green ship dead-2.bmp</pic>
+				<pic>green ship dead-3.bmp</pic>
+				<pic>green ship dead-4.bmp</pic>
+				<pic>green ship dead-5.bmp</pic>
+				<pic>green ship dead-6.bmp</pic>
+			</picsDead>
+			<timeBetweenPicsDead>0.1</timeBetweenPicsDead>
+			<cash>300</cash>
+			<initReloadTime>1</initReloadTime>
+			<entryPoint>0</entryPoint>
+			<entrySide>3</entrySide>
+			<entrySideChange>0</entrySideChange>
+		</enemy>
+		<enemy>
+			<obName>boss enemy</obName>
+			<minMoveTop>300</minMoveTop>
+			<maxMoveTop>300</maxMoveTop>
+			<minMoveLeft>0</minMoveLeft>
+			<maxMoveLeft>0</maxMoveLeft>
+			<maxHealth>300</maxHealth>
+			<weaponName>boss enemy</weaponName>
+			<pics>
+				<pic>boss enemy-1.bmp</pic>
+				<pic>boss enemy-2.bmp</pic>
+				<pic>boss enemy-3.bmp</pic>
+				<pic>boss enemy-4.bmp</pic>
+				<pic>boss enemy-5.bmp</pic>
+				<pic>boss enemy-6.bmp</pic>
+				<pic>boss enemy-7.bmp</pic>
+				<pic>boss enemy-8.bmp</pic>
+				<pic>boss enemy-9.bmp</pic>
+				<pic>boss enemy-10.bmp</pic>
+				<pic>boss enemy-11.bmp</pic>
+				<pic>boss enemy-12.bmp</pic>
+			</pics>
+			<timeBetweenPics>0.1</timeBetweenPics>
+			<picsDead>
+				<pic>boss dead enemy-1.bmp</pic>
+				<pic>boss dead enemy-2.bmp</pic>
+				<pic>boss dead enemy-3.bmp</pic>
+				<pic>boss dead enemy-4.bmp</pic>
+			</picsDead>
+			<timeBetweenPicsDead>0.3</timeBetweenPicsDead>
+			<cash>1000</cash>
+			<initReloadTime>5</initReloadTime>
+			<entryPoint>0</entryPoint>
+			<entrySide>2</entrySide>
+			<entrySideChange>0</entrySideChange>
+		</enemy>
+		<enemy>
+			<obName>asteroid L-R</obName>
+			<minMoveTop>1000</minMoveTop>
+			<maxMoveTop>1000</maxMoveTop>
+			<minMoveLeft>800</minMoveLeft>
+			<maxMoveLeft>1200</maxMoveLeft>
+			<maxHealth>1</maxHealth>
+			<weaponName></weaponName>
+			<pics>
+				<pic>asteroid-1.bmp</pic>
+				<pic>asteroid-2.bmp</pic>
+				<pic>asteroid-3.bmp</pic>
+				<pic>asteroid-4.bmp</pic>
+			</pics>
+			<timeBetweenPics>0.25</timeBetweenPics>
+			<picsDead>
+				<pic>asteroiddead-1.bmp</pic>
+				<pic>asteroiddead-2.bmp</pic>
+				<pic>asteroiddead-3.bmp</pic>
+				<pic>asteroiddead-4.bmp</pic>
+			</picsDead>
+			<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+			<cash>0</cash>
+			<initReloadTime>1</initReloadTime>
+			<entryPoint>2</entryPoint>
+			<entrySide>3</entrySide>
+			<entrySideChange>4000</entrySideChange>
+		</enemy>
+		<enemy>
+			<obName>asteroid T-R</obName>
+			<minMoveTop>1000</minMoveTop>
+			<maxMoveTop>1000</maxMoveTop>
+			<minMoveLeft>800</minMoveLeft>
+			<maxMoveLeft>1200</maxMoveLeft>
+			<maxHealth>1</maxHealth>
+			<weaponName></weaponName>
+			<pics>
+				<pic>asteroid-1.bmp</pic>
+				<pic>asteroid-2.bmp</pic>
+				<pic>asteroid-3.bmp</pic>
+				<pic>asteroid-4.bmp</pic>
+			</pics>
+			<timeBetweenPics>0.25</timeBetweenPics>
+			<picsDead>
+				<pic>asteroiddead-1.bmp</pic>
+				<pic>asteroiddead-2.bmp</pic>
+				<pic>asteroiddead-3.bmp</pic>
+				<pic>asteroiddead-4.bmp</pic>
+			</picsDead>
+			<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+			<cash>0</cash>
+			<initReloadTime>1</initReloadTime>
+			<entryPoint>0</entryPoint>
+			<entrySide>3</entrySide>
+			<entrySideChange>2000</entrySideChange>
+		</enemy>
+	</enemies>
+
+	<ships>
+		<ship>
+			<obName>blue player</obName>
+			<moveSpeed>5000</moveSpeed>
+			<maxHealth>100</maxHealth>
+			<reloadTimeMultiplier>1</reloadTimeMultiplier>
+			<collisionWeaponName>collission</collisionWeaponName>
+			<collisionProjectileFromWeaponName>main</collisionProjectileFromWeaponName>
+			<pics>
+				<pic>blue player-1.bmp</pic>
+				<pic>blue player-2.bmp</pic>
+			</pics>
+			<timeBetweenPics>0.1</timeBetweenPics>
+			<picsDead>
+				<pic>explosion-1.bmp</pic>
+				<pic>explosion-2.bmp</pic>
+			</picsDead>
+			<timeBetweenPicsDead>0.3</timeBetweenPicsDead>
+			<cost>0</cost>
+			<description>The classic starter ship.</description>
+			<title>Classic Ship</title>
+		</ship>
+		<ship>
+			<obName>tank player</obName>
+			<moveSpeed>4500</moveSpeed>
+			<maxHealth>200</maxHealth>
+			<reloadTimeMultiplier>0.8</reloadTimeMultiplier>
+			<collisionWeaponName>collission</collisionWeaponName>
+			<collisionProjectileFromWeaponName>main</collisionProjectileFromWeaponName>
+			<pics>
+				<pic>hulk player-1.bmp</pic>
+				<pic>hulk player-2.bmp</pic>
+				<pic>hulk player-3.bmp</pic>
+				<pic>hulk player-4.bmp</pic>
+			</pics>
+			<timeBetweenPics>0.175</timeBetweenPics>
+			<picsDead>
+				<pic>hulk dead player-1.bmp</pic>
+				<pic>hulk dead player-2.bmp</pic>
+			</picsDead>
+			<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+			<cost>3000</cost>
+			<description>This ship moves slightly slower but fires slightly faster and has 200 health.</description>
+			<title>Tank ship</title>
+		</ship>
+	</ships>
+
+	<!--These are the values for column and row in projectiles 
+		column:
+		wpFarLeft = 1
+		wpLeft = 2
+		wpRight = 3
+		wpFarRight = 4
+		
+		row:
+		wpFarFront = 1
+		wpFront = 2
+		wpBack = 3
+		wpFarBack = 4
+
+		both:
+		wpCustom = 0
+	-->
+	<weapons>
+		<weapon>
+			<obName>missile enemy</obName>
+			<projectiles>
+				<projectile>
+					<obName>1</obName>
+					<column>0</column>
+					<row>4</row>
+					<customColumn>0.5</customColumn>
+					<customRow>0</customRow>
+					<moveTop>4000</moveTop>
+					<moveLeft>0</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>missile enemy-1.bmp</pic>
+						<pic>missile enemy-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>missile dead-1.bmp</pic>
+						<pic>missile dead-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+					<damage>10</damage>
+					<reloadTime>1.5</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+			</projectiles>
+			<cost>-1</cost>
+			<description></description>
+			<title></title>
+		</weapon>
+		<weapon>
+			<obName>dual fireball enemy</obName>
+			<projectiles>
+				<projectile>
+					<obName>left</obName>
+					<column>2</column>
+					<row>4</row>
+					<customColumn>0</customColumn>
+					<customRow>0</customRow>
+					<moveTop>4000</moveTop>
+					<moveLeft>-3000</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>fireball-1.bmp</pic>
+						<pic>fireball-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>fireball dead-1.bmp</pic>
+						<pic>fireball dead-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.1</timeBetweenPicsDead>
+					<damage>5</damage>
+					<reloadTime>0.75</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+				<projectile>
+					<obName>right</obName>
+					<column>3</column>
+					<row>4</row>
+					<customColumn>0</customColumn>
+					<customRow>0</customRow>
+					<moveTop>4000</moveTop>
+					<moveLeft>3000</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>fireball-1.bmp</pic>
+						<pic>fireball-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>fireball dead-1.bmp</pic>
+						<pic>fireball dead-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.1</timeBetweenPicsDead>
+					<damage>5</damage>
+					<reloadTime>0.75</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+			</projectiles>
+			<cost>-1</cost>
+			<description></description>
+			<title></title>
+		</weapon>
+		<weapon>
+			<obName>gunk enemy</obName>
+			<projectiles>
+				<projectile>
+					<obName>1</obName>
+					<column>0</column>
+					<row>4</row>
+					<customColumn>0.5</customColumn>
+					<customRow>0</customRow>
+					<moveTop>3000</moveTop>
+					<moveLeft>0</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>gunk-1.bmp</pic>
+						<pic>gunk-2.bmp</pic>
+						<pic>gunk-3.bmp</pic>
+						<pic>gunk-4.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>gunk dead-1.bmp</pic>
+						<pic>gunk dead-2.bmp</pic>
+						<pic>gunk dead-3.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.1</timeBetweenPicsDead>
+					<damage>15</damage>
+					<reloadTime>1.8</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+			</projectiles>
+			<cost>-1</cost>
+			<description></description>
+			<title></title>
+		</weapon>
+		<weapon>
+			<obName>boss enemy</obName>
+			<projectiles>
+				<projectile>
+					<obName>left missile</obName>
+					<column>2</column>
+					<row>3</row>
+					<customColumn>0</customColumn>
+					<customRow>0</customRow>
+					<moveTop>4000</moveTop>
+					<moveLeft>0</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>missile enemy-1.bmp</pic>
+						<pic>missile enemy-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>missile dead-1.bmp</pic>
+						<pic>missile dead-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+					<damage>10</damage>
+					<reloadTime>2</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+				<projectile>
+					<obName>right missile</obName>
+					<column>3</column>
+					<row>3</row>
+					<customColumn>0</customColumn>
+					<customRow>0</customRow>
+					<moveTop>4000</moveTop>
+					<moveLeft>0</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>missile enemy-1.bmp</pic>
+						<pic>missile enemy-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>missile dead-1.bmp</pic>
+						<pic>missile dead-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+					<damage>10</damage>
+					<reloadTime>2</reloadTime>
+					<initReloadTime>1</initReloadTime>
+				</projectile>
+				<projectile>
+					<obName>fireball center</obName>
+					<column>0</column>
+					<row>3</row>
+					<customColumn>0.5</customColumn>
+					<customRow>0</customRow>
+					<moveTop>4000</moveTop>
+					<moveLeft>0</moveLeft>
+					<tracksPlayer>TRUE</tracksPlayer>
+					<pics>
+						<pic>fireball-1.bmp</pic>
+						<pic>fireball-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>fireball dead-1.bmp</pic>
+						<pic>fireball dead-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.1</timeBetweenPicsDead>
+					<damage>5</damage>
+					<reloadTime>0.75</reloadTime>
+					<initReloadTime>3</initReloadTime>
+				</projectile>
+			</projectiles>
+			<cost>-1</cost>
+			<description></description>
+			<title></title>
+		</weapon>
+		<weapon>
+			<obName>plasma player</obName>
+			<projectiles>
+				<projectile>
+					<obName>left</obName>
+					<column>2</column>
+					<row>2</row>
+					<customColumn>0</customColumn>
+					<customRow>0</customRow>
+					<moveTop>-7500</moveTop>
+					<moveLeft>0</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>plasma player-1.bmp</pic>
+						<pic>plasma player-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>plasma dead player-1.bmp</pic>
+						<pic>plasma dead player-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+					<damage>4</damage>
+					<reloadTime>0.25</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+				<projectile>
+					<obName>right</obName>
+					<column>3</column>
+					<row>2</row>
+					<customColumn>0</customColumn>
+					<customRow>0</customRow>
+					<moveTop>-7500</moveTop>
+					<moveLeft>0</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>plasma player-1.bmp</pic>
+						<pic>plasma player-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>plasma dead player-1.bmp</pic>
+						<pic>plasma dead player-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+					<damage>4</damage>
+					<reloadTime>0.25</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+			</projectiles>
+			<cost>0</cost>
+			<description>The classic starter weapon..</description>
+			<title>Dual Plasma</title>
+		</weapon>
+		<weapon>
+			<obName>fireplasma player</obName>
+			<projectiles>
+				<projectile>
+					<obName>left fireball</obName>
+					<column>2</column>
+					<row>1</row>
+					<customColumn>0</customColumn>
+					<customRow>0</customRow>
+					<moveTop>-3000</moveTop>
+					<moveLeft>-4000</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>fireball-1.bmp</pic>
+						<pic>fireball-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>fireball dead-1.bmp</pic>
+						<pic>fireball dead-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.1</timeBetweenPicsDead>
+					<damage>3</damage>
+					<reloadTime>0.25</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+				<projectile>
+					<obName>right fireball</obName>
+					<column>3</column>
+					<row>1</row>
+					<customColumn>0</customColumn>
+					<customRow>0</customRow>
+					<moveTop>-3000</moveTop>
+					<moveLeft>4000</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>fireball-1.bmp</pic>
+						<pic>fireball-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>fireball dead-1.bmp</pic>
+						<pic>fireball dead-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.1</timeBetweenPicsDead>
+					<damage>3</damage>
+					<reloadTime>0.25</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+				<projectile>
+					<obName>center plasma</obName>
+					<column>0</column>
+					<row>1</row>
+					<customColumn>0.5</customColumn>
+					<customRow>0</customRow>
+					<moveTop>-7500</moveTop>
+					<moveLeft>0</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>plasma player-1.bmp</pic>
+						<pic>plasma player-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>plasma dead player-1.bmp</pic>
+						<pic>plasma dead player-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+					<damage>4</damage>
+					<reloadTime>0.25</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+			</projectiles>
+			<cost>2000</cost>
+			<description>Fires a single plasma and a double fireball</description>
+			<title>PlasmaFire</title>
+		</weapon>
+		<weapon>
+			<obName>collission</obName>
+			<projectiles>
+				<projectile>
+					<obName>main</obName>
+					<column>0</column>
+					<row>4</row>
+					<customColumn>0.5</customColumn>
+					<customRow>0</customRow>
+					<moveTop>3000</moveTop>
+					<moveLeft>0</moveLeft>
+					<tracksPlayer>FALSE</tracksPlayer>
+					<pics>
+						<pic>gunk-1.bmp</pic>
+						<pic>gunk-2.bmp</pic>
+					</pics>
+					<timeBetweenPics>0.1</timeBetweenPics>
+					<picsDead>
+						<pic>missile dead-1.bmp</pic>
+						<pic>missile dead-2.bmp</pic>
+					</picsDead>
+					<timeBetweenPicsDead>0.2</timeBetweenPicsDead>
+					<damage>4</damage>
+					<reloadTime>0.1</reloadTime>
+					<initReloadTime>0</initReloadTime>
+				</projectile>
+			</projectiles>
+			<cost>-1</cost>
+			<description></description>
+			<title></title>
+		</weapon>
+	</weapons>
+
+	<backgroundobjects>
+		<backgroundobject>
+			<obName>big star</obName>
+			<moveSpeed>1300</moveSpeed>
+			<pics>
+				<pic>bigstar.bmp</pic>
+			</pics>
+			<timeBetweenPics>0</timeBetweenPics>
+			<chanceOfCreation>5.5</chanceOfCreation>
+		</backgroundobject>
+		<backgroundobject>
+			<obName>small star</obName>
+			<moveSpeed>1000</moveSpeed>
+			<pics>
+				<pic>smallstar.bmp</pic>
+			</pics>
+			<timeBetweenPics>0</timeBetweenPics>
+			<chanceOfCreation>3</chanceOfCreation>
+		</backgroundobject>
+	</backgroundobjects>
+
+	<levels>
+		<level>
+			<obName>level1</obName>
+			<title>Intro</title>
+			<description>Intro is the level name. What you are reading now is the level description. Click Start Mission to start playing. This mission is very easy.</description>
+			<dependenciesNames></dependenciesNames>
+			<enemiesPresent>
+				<enemyPresent>
+					<enemyName>grey enemy</enemyName>
+					<chanceOfCreation>0.5</chanceOfCreation>
+					<maxOnScreen>2</maxOnScreen>
+				</enemyPresent>
+			</enemiesPresent>
+			<levelTime>30</levelTime>
+			<backgroundobjectsPresentNames>
+				<backgroundobjectPresentName>big star</backgroundobjectPresentName>
+				<backgroundobjectPresentName>small star</backgroundobjectPresentName>
+			</backgroundobjectsPresentNames>
+			<bossName></bossName>
+			<backgroundColour>0</backgroundColour>
+			<backImageBackgroundobjectName></backImageBackgroundobjectName>
+			<enemiesStartTime>3</enemiesStartTime>
+			<bossFinalX>0</bossFinalX>
+			<bossFinalY>0.3</bossFinalY>
+		</level>
+		<level>
+			<obName>level2</obName>
+			<title>A new enemy</title>
+			<description>In the second mission you fight 2 different types of enemies. If your ship is low on shield from the first mission you can buy more at the shop below.</description>
+			<dependenciesNames>
+				<dependencieName>level1</dependencieName>
+			</dependenciesNames>
+			<enemiesPresent>
+				<enemyPresent>
+					<enemyName>grey enemy</enemyName>
+					<chanceOfCreation>0.5</chanceOfCreation>
+					<maxOnScreen>2</maxOnScreen>
+				</enemyPresent>
+				<enemyPresent>
+					<enemyName>rust enemy</enemyName>
+					<chanceOfCreation>0.5</chanceOfCreation>
+					<maxOnScreen>2</maxOnScreen>
+				</enemyPresent>
+			</enemiesPresent>
+			<levelTime>40</levelTime>
+			<backgroundobjectsPresentNames>
+				<backgroundobjectPresentName>big star</backgroundobjectPresentName>
+				<backgroundobjectPresentName>small star</backgroundobjectPresentName>
+			</backgroundobjectsPresentNames>
+			<bossName></bossName>
+			<backgroundColour>0</backgroundColour>
+			<backImageBackgroundobjectName></backImageBackgroundobjectName>
+			<enemiesStartTime>3</enemiesStartTime>
+			<bossFinalX>0</bossFinalX>
+			<bossFinalY>0.3</bossFinalY>
+		</level>
+		<level>
+			<obName>level3</obName>
+			<title>The Asteroid feild</title>
+			<description>There is an asteroid feild up ahead! This is one of 2 missions available after passing the second mission. Dont forget to check out the weapon and ship shops..</description>
+			<dependenciesNames>
+				<dependencieName>level2</dependencieName>
+			</dependenciesNames>
+			<enemiesPresent>
+				<enemyPresent>
+					<enemyName>grey enemy</enemyName>
+					<chanceOfCreation>0.5</chanceOfCreation>
+					<maxOnScreen>2</maxOnScreen>
+				</enemyPresent>
+				<enemyPresent>
+					<enemyName>rust enemy</enemyName>
+					<chanceOfCreation>0.5</chanceOfCreation>
+					<maxOnScreen>2</maxOnScreen>
+				</enemyPresent>
+				<enemyPresent>
+					<enemyName>asteroid L-R</enemyName>
+					<chanceOfCreation>2</chanceOfCreation>
+					<maxOnScreen>3</maxOnScreen>
+				</enemyPresent>
+				<enemyPresent>
+					<enemyName>asteroid T-R</enemyName>
+					<chanceOfCreation>2</chanceOfCreation>
+					<maxOnScreen>3</maxOnScreen>
+				</enemyPresent>
+			</enemiesPresent>
+			<levelTime>40</levelTime>
+			<backgroundobjectsPresentNames>
+				<backgroundobjectPresentName>big star</backgroundobjectPresentName>
+				<backgroundobjectPresentName>small star</backgroundobjectPresentName>
+			</backgroundobjectsPresentNames>
+			<bossName></bossName>
+			<backgroundColour>0</backgroundColour>
+			<backImageBackgroundobjectName></backImageBackgroundobjectName>
+			<enemiesStartTime>3</enemiesStartTime>
+			<bossFinalX>0</bossFinalX>
+			<bossFinalY>0.3</bossFinalY>
+		</level>
+		<level>
+			<obName>level4</obName>
+			<title>The spiders</title>
+			<description>Meet the spiders. There is a spider boss at the end of this mission. This is one of 2 missions available after passing the second mission</description>
+			<dependenciesNames>
+				<dependencieName>level2</dependencieName>
+			</dependenciesNames>
+			<enemiesPresent>
+				<enemyPresent>
+					<enemyName>green enemy</enemyName>
+					<chanceOfCreation>1</chanceOfCreation>
+					<maxOnScreen>3</maxOnScreen>
+				</enemyPresent>
+			</enemiesPresent>
+			<levelTime>40</levelTime>
+			<backgroundobjectsPresentNames>
+				<backgroundobjectPresentName>big star</backgroundobjectPresentName>
+				<backgroundobjectPresentName>small star</backgroundobjectPresentName>
+			</backgroundobjectsPresentNames>
+			<bossName>boss enemy</bossName>
+			<backgroundColour>0</backgroundColour>
+			<backImageBackgroundobjectName></backImageBackgroundobjectName>
+			<enemiesStartTime>3</enemiesStartTime>
+			<bossFinalX>0</bossFinalX>
+			<bossFinalY>0.3</bossFinalY>
+		</level>
+		<level>
+			<obName>gameover</obName>
+			<title>Game Over</title>
+			<description>You have passed all the levels in the demonstration mod. A better mod and version 1.0 are coming soon. You can play the Game Over mission as many times as you like.. (its pretty hard)</description>
+			<dependenciesNames>
+				<dependencieName>level4</dependencieName>
+				<dependencieName>level3</dependencieName>
+			</dependenciesNames>
+			<enemiesPresent>
+				<enemyPresent>
+					<enemyName>grey enemy</enemyName>
+					<chanceOfCreation>2</chanceOfCreation>
+					<maxOnScreen>4</maxOnScreen>
+				</enemyPresent>
+				<enemyPresent>
+					<enemyName>rust enemy</enemyName>
+					<chanceOfCreation>1</chanceOfCreation>
+					<maxOnScreen>2</maxOnScreen>
+				</enemyPresent>
+				<enemyPresent>
+					<enemyName>green enemy</enemyName>
+					<chanceOfCreation>1</chanceOfCreation>
+					<maxOnScreen>2</maxOnScreen>
+				</enemyPresent>
+				<enemyPresent>
+					<enemyName>asteroid L-R</enemyName>
+					<chanceOfCreation>2</chanceOfCreation>
+					<maxOnScreen>5</maxOnScreen>
+				</enemyPresent>
+				<enemyPresent>
+					<enemyName>asteroid T-R</enemyName>
+					<chanceOfCreation>2</chanceOfCreation>
+					<maxOnScreen>5</maxOnScreen>
+				</enemyPresent>
+			</enemiesPresent>
+			<levelTime>60</levelTime>
+			<backgroundobjectsPresentNames>
+				<backgroundobjectPresentName>big star</backgroundobjectPresentName>
+				<backgroundobjectPresentName>small star</backgroundobjectPresentName>
+			</backgroundobjectsPresentNames>
+			<bossName>boss enemy</bossName>
+			<backgroundColour>0</backgroundColour>
+			<backImageBackgroundobjectName></backImageBackgroundobjectName>
+			<enemiesStartTime>3</enemiesStartTime>
+			<bossFinalX>0</bossFinalX>
+			<bossFinalY>0.3</bossFinalY>
+		</level>
+	</levels>
+
+</shipmod>

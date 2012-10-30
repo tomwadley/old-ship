@@ -1,0 +1,17 @@
+
+<!ELEMENT shipsave (shipsOwned,shipSelected,weaponsOwned,weaponSelected1,weaponSelected2,levelsPassed,cash)>
+	<!ATTLIST shipsave modname CDATA #REQUIRED>
+	<!ATTLIST shipsave shipsaveversion CDATA #REQUIRED>
+
+	<!ELEMENT shipsOwned (ship*)>
+		<!ELEMENT ship (obName,health)>
+			<!ELEMENT obName (#PCDATA)>
+			<!ELEMENT health (#PCDATA)>
+	<!ELEMENT shipSelected (#PCDATA)>
+	<!ELEMENT weaponsOwned (weapon*)>
+		<!ELEMENT weapon (#PCDATA)>
+	<!ELEMENT weaponSelected1 (#PCDATA)>
+	<!ELEMENT weaponSelected2 (#PCDATA)>
+	<!ELEMENT levelsPassed (level*)>
+		<!ELEMENT level (#PCDATA)>
+	<!ELEMENT cash (#PCDATA)>

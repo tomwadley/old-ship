@@ -1,0 +1,79 @@
+
+<!ELEMENT shipmod (description,picMaskColour,newGame,healthPrice,enemies,ships,weapons,backgroundobjects,levels)>
+	<!ATTLIST shipmod name CDATA #REQUIRED>
+	<!ATTLIST shipmod shipmodversion CDATA #REQUIRED>
+
+	<!ELEMENT newGame (weaponsOwnedNames,shipsOwnedNames)>
+		<!ELEMENT weaponsOwnedNames (weaponName*)>
+		<!ELEMENT shipsOwnedNames (shipName*)>
+	
+	<!ELEMENT healthPrice (qty,cost)>
+
+	<!ELEMENT enemies (enemy*)>
+		<!ELEMENT enemy (obName,minMoveTop,maxMoveTop,minMoveLeft,maxMoveLeft,maxHealth,weaponName,pics,timeBetweenPics,picsDead,timeBetweenPicsDead,cash,initReloadTime,entryPoint,entrySide,entrySideChange)>
+	<!ELEMENT ships (ship*)>
+		<!ELEMENT ship (obName,moveSpeed,maxHealth,reloadTimeMultiplier,collisionWeaponName,collisionProjectileFromWeaponName,pics,timeBetweenPics,picsDead,timeBetweenPicsDead,cost,description,title)>
+	<!ELEMENT weapons (weapon*)>
+		<!ELEMENT weapon (obName,projectiles,cost,description,title)>
+			<!ELEMENT projectiles (projectile*)>
+				<!ELEMENT projectile (obName,column,row,customColumn,customRow,moveTop,moveLeft,tracksPlayer,pics,timeBetweenPics,picsDead,timeBetweenPicsDead,damage,reloadTime,initReloadTime)>
+	<!ELEMENT backgroundobjects (backgroundobject*)>
+		<!ELEMENT backgroundobject (obName,moveSpeed,pics,timeBetweenPics,chanceOfCreation)>
+	<!ELEMENT levels (level*)>
+		<!ELEMENT level (obName,title,description,dependenciesNames,enemiesPresent,levelTime,backgroundobjectsPresentNames,bossName,backgroundColour,backImageBackgroundobjectName,enemiesStartTime,bossFinalX,bossFinalY)>
+			<!ELEMENT dependenciesNames (dependencieName*)>
+			<!ELEMENT enemiesPresent (enemyPresent*)>
+				<!ELEMENT enemyPresent (enemyName,chanceOfCreation,maxOnScreen)>
+			<!ELEMENT backgroundobjectsPresentNames (backgroundobjectPresentName*)>
+				
+
+
+<!ELEMENT pics (pic*)>
+<!ELEMENT picsDead (pic*)>
+	<!ELEMENT pic (#PCDATA)>
+
+<!ELEMENT obName (#PCDATA)>
+<!ELEMENT minMoveTop (#PCDATA)>
+<!ELEMENT maxMoveTop (#PCDATA)>
+<!ELEMENT minMoveLeft (#PCDATA)>
+<!ELEMENT maxMoveLeft (#PCDATA)>
+<!ELEMENT maxHealth (#PCDATA)>
+<!ELEMENT weaponName (#PCDATA)>
+<!ELEMENT shipName (#PCDATA)>
+<!ELEMENT moveSpeed (#PCDATA)>
+<!ELEMENT reloadTimeMultiplier (#PCDATA)>
+<!ELEMENT collisionWeaponName (#PCDATA)>
+<!ELEMENT collisionProjectileFromWeaponName (#PCDATA)>
+<!ELEMENT cost (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT column (#PCDATA)>
+<!ELEMENT row (#PCDATA)>
+<!ELEMENT moveTop (#PCDATA)>
+<!ELEMENT moveLeft (#PCDATA)>
+<!ELEMENT tracksPlayer (#PCDATA)>
+<!ELEMENT damage (#PCDATA)>
+<!ELEMENT reloadTime (#PCDATA)>
+<!ELEMENT initReloadTime (#PCDATA)>
+<!ELEMENT chanceOfCreation (#PCDATA)>
+<!ELEMENT levelTime (#PCDATA)>
+<!ELEMENT bossName (#PCDATA)>
+<!ELEMENT backgroundColour (#PCDATA)>
+<!ELEMENT backImageBackgroundobjectName (#PCDATA)>
+<!ELEMENT enemiesStartTime (#PCDATA)>
+<!ELEMENT bossFinalX (#PCDATA)>
+<!ELEMENT bossFinalY (#PCDATA)>
+<!ELEMENT dependencieName (#PCDATA)>
+<!ELEMENT backgroundobjectPresentName (#PCDATA)>
+<!ELEMENT timeBetweenPics (#PCDATA)>
+<!ELEMENT timeBetweenPicsDead (#PCDATA)>
+<!ELEMENT cash (#PCDATA)>
+<!ELEMENT entryPoint (#PCDATA)>
+<!ELEMENT entrySide (#PCDATA)>
+<!ELEMENT entrySideChange (#PCDATA)>
+<!ELEMENT enemyName (#PCDATA)>
+<!ELEMENT maxOnScreen (#PCDATA)>
+<!ELEMENT picMaskColour (#PCDATA)>
+<!ELEMENT customColumn (#PCDATA)>
+<!ELEMENT customRow (#PCDATA)>
+<!ELEMENT qty (#PCDATA)>
