@@ -6,7 +6,7 @@ If you're looking for ship.js, you can find it [here](https://github.com/tomwadl
 
 ## Description
 
-This is an arcade style game I wrote in VB6 which I used to hack on every now and then at school when I should have been doing something else. I probably worked on this between about 2003-2005 when I was 13-15 years old (I wish I'd kept it in version control but I didn't).
+This is an arcade style game I wrote in VB6 which I used to hack on every now and then at school when I should have been doing something else. I probably worked on this between about 2003-2005 when I was 14-16 years old (I wish I'd kept it in version control but I didn't).
 
 The thing about Ship I was proudest of at the time was that all of the game data was read from an XML file making it easy to create "mods" for the game which had different ships, weapons and enemies that behaved differently.
 
